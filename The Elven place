@@ -1,0 +1,606 @@
+#terminal game, its a game where you choose options and then more options
+#and then end up somewhere doing something
+
+print(" _________________________")
+print("|                         |")
+print("|                         |")
+print("|     THE ELVEN PLACE     |")
+print("|                         |")
+print("|_________________________|")
+print("    ")
+
+
+print("DISCLAIMER: This is but a game, don't take anything personally")
+print("....Don't play if you cannot take a weird joke. Thank you for playing though")
+
+ready=(input("Are you ready?(answer in a yes or no) "))  #this is mainly for a pause
+if ready.lower() == "yes" :
+  print("      ")
+
+  print("")
+
+  print("      ")
+  print("DAY ONE: you just got turned into an elf, you go to the elf tribe to take you in")
+  print("because your human father said 'you are no longer my child' and your annoying younger")
+  print("brother, he had the nerve to say 'ew you look ugly', like has he seen his face?")
+  print("and now you're in front of the elf tribe, they're not fast in accepting new comers #trustissues am i right? ")
+  print("          ")
+  print("You have to choose, are you going to ")
+  print("      ")
+  print("1)tap dance")
+  print("2)yodel for them")
+  print("  ")
+
+  Q1 = int(input("what do you choose(1 or 2): "))         
+  #3 is the obvious choice
+
+  if Q1 == 1:
+    print("    ")
+    print("the elven tribe is very impressed by your tap dancing skills, those tap dance classes paid off huh.")
+    print("Your feet though, 'ew, humans really dont take care of their feet,disgusting'")
+    print("the elves ask you to get a pedicure")
+    print(" ")
+    print("will you get a pedicure?")
+    print("1) Yes")
+    print("2) No way, I ain't letting some elves do my feet")  
+    print("  ")
+
+    Q1_1 = int(input("choose:"))
+
+    if Q1_1 == 1: #sub scenario one
+      print("good choice, they won't cut off your feet now")
+    
+      print("  ")
+      print("Your feet look amazing, lessgo.")
+      print("  ")
+      print("It's night tome and you go to sleep, guunite")
+      print("  ")
+      print("DAY TWO")
+      print("  ")
+      print("You have to contribute to the elven economy")
+      print("there are choice obviously")
+      print(" you could :")
+      print("1) start you own tap dancing classes")
+      print("2) do agriculture") 
+      print("3) laze around because they give free food and shelter")
+      print("4) start an illegal auction where you sell the children that screamed in your flight")
+      print("  ")
+
+      Q1_12 = int(input("choose : "))
+
+      if Q1_12 == 1:
+    
+        print("The elves are impressed by this new dance class in their village")
+        print(" ")
+        print("DAY THREE")
+        print("They send their kids")
+        print("The kids are almost like little demons, they destroy your studio")
+        print("do you ")
+        print("1)start an illegal auction and sell off the kids  ")
+        print("2)forgive the kids but make the parents pay 40% extra ")
+        print("  ")
+
+        Q1_13 = int(input("choose: "))
+
+        if Q1_13 == 1: #lives peacefully
+          print("  ")
+          print("good choice, village head approves, she really hated those kids")
+          print("but the parents, they're angry at you, they torch your already torn down studio")
+          print("  ")
+          print("since the village head approved, you still live in the village")
+          print("but since you can't really start any other business you become the village head's secretary")
+          print("you live a fairly peaceful life")
+          exit()
+
+        elif Q1_13 == 2:
+          print("  ")
+          print("The Village head sees your potential ")
+          print("The parents however refuse to pay for the damages their kids caused.")
+          print("  ")
+          print("but no worries, the village head is a just elf, she pays for the studio")
+          print("and makes the parents pay for the damages.")
+          print("  ")
+          print("You kick the kids out though.")
+          print("  ")
+          print("A beautiful foreign elf joins ")
+          print("do you")
+          print("1) let the elf join your classes for a fair rate")
+          print("2) rip the elf off and start a tourist scamming business ")
+
+          Q1_14 = int(input("choose:"))
+
+          if Q1_14 == 1:  #it ends
+            print("Congratulations, you're boring but a good elf ")
+            print("Since you didn't rip the elf off, the elf is in awe of your just spirit ")
+            print("You live happily with the foreign elf cuz the two of you fell in love ")
+            print("Ya'll have cute elf kids ")
+            print(" ")
+            print("|     THE END     |")
+            exit()
+
+          elif Q1_14 == 2 : #it ends
+            print("The village head is again impressed by you")
+            print("She decides to help you with all your future endeavors as long as you're not selling kids")
+            print("You become the richest business elf in the village")
+            print("The parents who previously refused to pay extra now come to you to ask business ideas")
+            print(" You scam them too. MUAHAHAHAAHAHA")
+            print("|     THE END     |")
+            exit()
+          
+          while True:
+            Q1_14 = int(input("what do you choose(1-4): "))
+            if Q1_14 in [1, 2]:
+              break  # Exit the loop if a valid choice is made
+            else:
+              print("Invalid input. Please choose a number between 1 and 4.")
+
+        else:
+          print("invalid input, start again")
+          exit()
+
+      elif Q1_12 == 2:  # user dies
+        print("  ")
+        print("The elves really love their plants")
+        print("You die")
+        print(" Cuz elf logic: new elf kill plant = new elf die.")
+        print("|    THE END     | ")
+
+      elif Q1_12 == 3:    # user gets kicked out for leeching, and dies from starvation
+        print("  ")
+        print("DAY THREE: ")
+        print("The village head is annoyed at the extra expenses you bring to the table")
+        print("She decides to kick you out, you're a new comer anyways")
+        print(" ")
+        print("Since you got kicked out on your third day, no other tribe accepts you thinking you're a troublemaker. LOL XD ")
+        print("you get kidnapped by elf slave traders")
+        print("You are now stranded on a very empty island, you die from starvation, oops")
+        print("|     THE END      |  ")
+      
+      elif Q1_12 == 4:   # more subscenarios
+        print("Since you're mainly selling human kids, the elf tribe approves ")
+        print("You're officially part of the tribe")
+        print("  ")
+        print("There is peace for a while, that is, until you accidently sell off elon musk's kid")
+        print("either you :")
+        print("1) Run away ")
+        print("2) gain more wealth than elon musk")
+        print("3) negotiate with elon musk")
+        print(" ")
+
+        Q1_121 = int(input("choose: "))
+
+        if Q1_121 == 1: #happily ever afterwards, ew
+          print(" ")
+          print("Fortunately you ran towards the countryside where some nice old folks took you in")
+          print("And all you have to do is massage their backs and feet and whatnot")
+          print("You live happily ever after")
+          print("|     THE END      |")
+          exit()
+
+        elif Q1_121 == 2:
+          print(" ")
+          print("You can't, stop dreaming")
+          print("Elon musk laughs at your effort, captures you and sends you to area 51 to clone you")
+          print("|      THE END      |")
+          exit()
+        
+        elif Q1_121 == 3: #pure evil
+          print("Elon appreciates the effort, he thinks you're brave if not very smart")
+          print("Elon presents you with two options")
+          print("1)Become Elon's slave, he'll feed you and clothe you but you have to was his butthole")
+          print("2)Become a nursery class teacher and deal with crying children for the rest of your life")
+            
+          Q1_1211 = int(input("Choose:"))
+
+          if Q1_1211 == 1 :
+            print(" ")
+            print("congratulations you're officially washing elon muck's butt")
+            print("Butt on the plus side, you can live")
+            print("so you live cleaning Elon's butt for the rest of your life")
+            print("|       THE END       | ")
+            exit()
+
+          elif  Q1_1211 == 2:
+            print("one of the parents of the kids you teach is single,ya'll get married and live happily ")
+            print("|       THE END        | ")
+            exit()
+          
+          else :
+            print("invalid input ")
+            exit()
+        
+        else:
+          print("invalid input")
+          exit()  
+        
+      else:
+        print("Invalid input. Please choose a number between 1 and 4.")
+        exit()
+ 
+      
+    elif Q1_1 == 2 : # user dies
+      print(" ")
+      print("good job, they cut your feet off, you can't walk now lol XD")  
+      print("you also lose a lot of blood and you die.")
+      print("|     THE END     |  ")
+      exit()
+    
+    
+    else:
+      print("Invalid input. Please choose a number between 1 and 4.")
+      exit()
+
+
+  elif Q1 == 2:
+    print("'what sort of demon has fallen upon us' the towns-elves think")
+    print("but the village head is impressed by your confidence, she decides to let you live")
+    print(" ")
+    print("DAY TWO")
+    print("you make a very disgusting face when you yodel, the village asks that you get a plastic surgery")
+    print("Do you get plastic surgery?")
+    print(" ")
+
+    Q1_2 = (input("yes or no:"))
+
+    if Q1_2.lower() == "yes" :
+      print(" ")
+      print("Good job. They won't cut off your head")
+      print(" ")
+
+      print("Now that you survive the plastic surgery, you gotta contribute to the elven economy")
+      print("you can:")
+      print("1)Start a 'How to yodel class'")
+      print("2)Laze around because they give free food and shelter")
+
+      Q1_21 = int(input('Choose:'))
+
+      if Q1_21 == 1:
+        print("The elves that wasn't there for your first session of yodelling sent their kids to your class")
+        print(" ")
+        print("the little elves went home crying")
+        print("The parents are rioting in front of your shop because their kids went deaf")
+        print("some of the parents threw stones at your window")
+        print("Do you:")
+        print("1) Throw the stones back at them")
+        print("2) Yodel for the parents")
+        print("3) Give the 'I have a dream' speech")
+
+        Q1_211 = int(input("Choose:"))
+
+        if Q1_211 == 1:
+          print(" ")
+          print("I approve, but one of the parent elf's head was hurt and they don't remember anything")
+          print("And turns out that this parent is the village head's bestie, so you're doomed")
+          print("You die an honourable death, standing for what you believed in.")
+          print("but like you're dead, so game over")
+          print("|      THE END      |")
+          exit()
+
+        elif Q1_211 == 2:
+          print(" ")
+          print("You start but after just 2 seconds, you can't hear your own voice")
+          print("Yup, the worst has happened, you have yourself deaf. Uhhh awkwarddd ")
+          print("The parents were smart, they brought mufflers, they do want to kick you out of the village")
+          print(" ")
+          print("The village head pities you and gives you a chance to redeem yourself")
+          print("1) You could start a shoe business ")
+          print("2) You could become an envoy for the deaf elf community")
+          print("3) Start a restaurant")
+
+          Q1_212 = int(input("Choose:"))
+
+          if Q1_212 == 3:   # it ends
+            print("Your cooking tasted so bad that some-elf died")
+            print("Since it was your cooking, you're sentenced to death ")
+            print(" ")
+            print("The village head looks at you dissappointed, she turns away as you look at her pitifully")
+            print("|     THE END     |")
+            exit()
+
+          elif Q1_212 == 2: #it ends
+            print(" ")
+            print("The deaf elf community had been suffering cuz they had no proper leaders so far")
+            print("They accept you with open arms")
+            print("This is the first time you feel loved and welcome, you have two choices now")
+            print("1) lead the deaf elf community with all you have ")
+            print("2) bathe in this newfound love and just enjoy it ")
+
+            Q1_2121 = int(input('choose:'))
+
+            if Q1_2121 == 2 :
+              print(" ")
+              print("You lead the deaf elf community to ruin and the village head sentences you to death")
+              print("You made all the deaf elves gain trust issues with outsiders")
+              print(" ")
+              print("You are beheaded and you die")
+              print("The deaf elf community move on and get a better leader and the only people who showed you love forgot about you :)")
+              print("|     THE END     |")
+
+              exit()
+          
+            elif Q1_2121 == 1:
+              print(" ")
+              print("Your efforts are noted by the village head and the deaf elf community appreciates it.")
+              print("The village head, she's intrigued by you and somewhere beneath all that muscle she developed feelings for that one elf ")
+              print("Your right hand elf.")
+              print(" ")
+              print("Yeah... you don't find love")
+              print("You live a bachelors life leading the community, while watching your right hand elf live his romance filled life")
+              print(" ")
+              print("On your death bed, kid elves cry and your right hand elf cries on his wife's shoulder ")
+              print("But you die an honourable death ")
+              print(" ")
+              print("It is declared as a national elf holiday")
+              print("|     THE END     |")
+              exit()
+
+            else:
+              print("invalid input")
+              exit()
+
+          elif Q1_212 == 1:
+            print(" ")
+            print("You start a 'customize your shoe' shop and your first customer is your annoying younger human brother")
+            print("Do you ")
+            print("1) Treat your brother as a customer ")
+            print("2) Kick your brother out ")
+
+            Q1_2122 = int(input('choose:'))
+
+            if Q1_2122 == 1:
+              print(" ")
+              print("Your brother is confused with your behavior")
+              print("But he is happy with how you're treating him ")
+              print("All the time you were human, all you ever did was treat him like a piece of trash")
+              print(" ")
+              print("He's happy that you've changed and says 'I'll do anything you want me to do, big brother' ")
+              print("do you want to take advantage of this?")
+              print("1) yes")
+              print("2) no ")
+
+              Q1_2123 = int(input('1 or 2 : '))
+
+              if Q1_2123 == 1:
+                print("NICEEE, I approve")
+                print("will you")
+                print("1) rip him off of his money")
+                print("2) make him clean your shop")
+
+                Q1_2124 = int(input("Choose: "))
+
+                if Q1_2124 == 1:
+                  print(" ")
+                  print("He realises your ripping off his money")
+                  print("He's okay with it. He says he was gonna die in a few days ")
+                  print("He borrowed moeny from some loan sharks and he can't pay them back so now they want his head")
+                  print(" ")
+                  print("Will you help your lil brother? ")
+                  print(" ")
+
+                  Q1_2125 = str(input("yes or no: "))
+
+                  if Q1_2125.lower() == "yes":
+                    print("Awwwwww. You do love your lil brother, you lil cutie uwu. ")
+                    print("With all the money you've been given by the village head, you pay off the loan sharks")
+                    print(" ")
+                    print("You expect your brother to run off now that his loans are paid off ")
+                    print("He doesn't though... hmmmm why i wonder ")
+                    print("You ask him and he says that he got kicked out of the house cuz of the loan sharks")
+                    print("He is utterly grateful to you and will serve you for eternity.")
+                    print(" ")
+                    print("You rebuild the shoe business with your brother's help")
+                    print("As for the money, the village head pitied you and decided to help you out of her own money")
+                    print(" ")
+                    print("And she likes your brother's face ")
+                    print("Thus starts the romance of your brother and the village head elf ")
+                    print("You live happily well kinda, you watch your brother's prosperous love life")
+                    print("for 10 years, then you find love, and your business is florishing so you live happily.")
+                    print("|     THE END     |")
+
+                    exit()
+                    
+                  else : 
+                    print("He's your brother, how could you.")
+                    print(" ")
+                    print("Your brother dies cuz of the loan sharks.")
+                    print("Before he died he'd stayed in the village for a while ")
+                    print("A romance bloomed between him and the village head ")
+                    print(" ")
+                    print("when he died the villager heard the tale of the brother that didn't help his brother in times of trouble ")
+                    print("They rioted that you be killed ")
+                    print(" ")
+                    print("The village head spread that tale")
+                    print("You're beaheaded as per the demands of the people")
+                    print("You die")
+                    print("|     THE END     |")
+                    exit()
+
+                else: 
+                  print("He's suprised your didnt rip him off of his money")
+                  print("He seems very down in the dust ")
+                  print("You ask him what's wrong,  He says he was gonna die in a few days ")
+                  print("He borrowed moeny from some loan sharks and he can't pay them back so now they want his head")
+                  print(" ")
+                  print("Will you help your lil brother? ")
+                  print(" ")
+
+                  Q1_2126 = str(input("yes or no: "))
+
+                  if Q1_2126.lower() == "yes":
+                    print("Awwwwww. You do love your lil brother, you lil cutie uwu. ")
+                    print("With all the money you've been given by the village head, you pay off the loan sharks")
+                    print(" ")
+                    print("You expect your brother to run off now that his loans are paid off ")
+                    print("He doesn't though... ")
+                    print("You ask him and he says that he got kicked out of the house cuz of the loan sharks")
+                    print("He is utterly grateful to you and will serve you for eternity.")
+                    print(" ")
+                    print("You rebuild the shoe business with your brother's help")
+                    print("As for the money, the village head pitied you and decided to help you out of her own money")
+                    print(" ")
+                    print("And she likes your brother's face ")
+                    print("Thus starts the romance of your brother and the village head elf ")
+                    print("You live happily well kinda, you watch your brother's prosperous love life")
+                    print("for 10 years, then you find love, and your business is florishing so you live happily.")
+                    print("|     THE END     |")
+
+                    exit()
+                    
+                  else : 
+                    print("He's your brother, how could you.")
+                    print(" ")
+                    print("Your brother dies cuz of the loan sharks.")
+                    print("Before he died he'd stayed in the village for a while ")
+                    print("A romance bloomed between him and the village head ")
+                    print(" ")
+                    print("when he died the villager heard the tale of the brother that didn't help his brother in times of trouble ")
+                    print("They rioted that you be killed ")
+                    print(" ")
+                    print("The village head spread that tale")
+                    print("You're beaheaded as per the demands of the people")
+                    print("You die")
+                    print("|     THE END     |")
+                    exit()
+             
+              else:
+                print("WHY NOT. URGH")    
+                print(" ")
+                print("but,the village head is intrigued by how much of a just elf you are.")
+                print(" ")
+                print("Your potential gets noticed")
+                print("She grants you with unlimited supply of resources for your venture")
+                print("You become the biggest merchant elf in the entire community with the chief's support")
+                print("You can live like a bum now and you let your brother leech off of your money cuz he got kicked out of the house. lol")
+                print("|     THE END     |")
+                exit()
+
+            elif Q1_2122 == 2: 
+              print("Your brother tells on you to the chief")
+              print(" ")
+              print("She is very captivated by your brother's beauty so she makes your shoe business go to dirt")
+              print("You have two choices")
+              print("1) Seek refuge in another village cuz this one clearly doesn't like you")
+              print("2) Kill the village head and take control over the village")
+
+              Q1_2131 =int(input("choose:"))
+
+              if Q1_2131 == 2:
+                print("You suprisingly succeed in killing her but your brother was in love with her")
+                print("So he calls his thug human friends to kill you ")
+                print("And the villagers also want your head")
+                print("You're doomed")
+                print("You die a gruesome death")
+                print("|     THE END     |")
+                print("Ps, revenge is never the answer :)")
+                exit()
+
+              elif Q1_2131 == 1:
+                print("All the nearby were nnotified by the chief that you're a selfish guy that kicked his beatiful brother out of his shop")
+                print("And beacuse of tht the villagers wondered how beautiful you could be considering you're related to your brother")
+                print(" ")
+                print("They see your face and are immediately repulsed")
+                print("You're not even allowed into the village ")
+                print("They were scared you would scar the children for life")
+                print("...")
+                print("uh sorry bro")
+                print("You get stranded and die")
+                print("|    THE END    |")
+                exit()
+              
+              else :
+                print("invalid input")
+                exit()
+            
+            else:
+              print("invalid input")
+              exit()
+            
+          else :
+            print("invalis input")
+            exit()
+
+        elif Q1_211 == 3:
+          print(" ")
+          print("Mid speech someelf yells you're not martin!!!")
+          print("They start throwing stones at you ")
+          print("One of the stones hits your butt")
+          print("It bounces off and hits head of the elf who threw it and they die")
+          print("You're imprisoned for killing a citizen")
+          print(" ")
+
+          print("You get a choice though")
+          print("1) Get your butt cut off so that it doesn't hurt anyelf again")
+          print("2) Get executed ")
+          
+          Q1_2123 = int(input('choose:'))
+
+          if Q1_2131 == 2:
+            print("well that happened and you die")
+            print("|      THE END      |")
+            exit()
+
+          else:
+            print(" ")
+            print("WHY WOULD YOU DO THAT TO YOURSELF T^T")
+            print("Well somehow you live through that ")
+            print("Because of this ordeal, you don't trust the village's judgement ")
+            print("Do you ")
+            print("1) Continue to live in the village ")
+            print("2) Seclude yourself at the feet of the Boat Hill, the highest hill of the elven kingdom")
+
+            Q1_2132 = int(input("1 or 2: "))
+
+            if Q1_2132 == 1 :
+              print(" ")
+              print("You get depressed and close yourself off from the outside world")
+              print("You lost the one precious thing to you, Your butt")
+              print("I understand...")
+              print("You die cuz of depression")
+              print("|     THE END     | ")
+              exit()
+
+            else: 
+              print(" ")
+              print("Other than your butt, Earning money gave you happiness")
+              print("You start a tourist hotel stay at the bottom of the village where noelf has power over wht you do with the hotel ")
+              print(" ")
+              print("You meet different elves and you start to gain a little trust in them ")
+              print(" ")
+              print("Then you meet an ugly female elf ")
+              print("But the two of you hit it off immediately, you fall in a ditch together and bond while stuck in there")
+              print("The two of you become business partners and ripp elves off ")
+              print("You live happily ever after, after ripping off a bunch of elves together for the rest of your lifetime ")
+              print("|     THE END     | ")
+              exit()
+
+        else:
+          print("invalid input")
+          exit()     
+
+      elif Q1_21 == 2 :
+        print("The villagers and the chief don't like that you're not working for the food")
+        print(" ")
+        print("You get executed cuz your hoarded a lot of the food")
+        print("|     THE END     |")
+        exit()
+
+      else:
+        print("invalid input")
+        exit()
+
+    elif Q1_2.lower() == "no" :
+      print("They hate your face and your head gets cut off, oops")
+      print("|     THE END     |")  
+      exit()
+
+    else:
+      print("invalid input")
+      exit()  
+
+  else:
+    print("invalid input")
+    exit()  
+     
+else:
+  print("welp, your loss")
+  exit()
